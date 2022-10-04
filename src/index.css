@@ -32,7 +32,7 @@ html::-webkit-scrollbar{
     bottom: 30%;
     transform: translateX(-50%);
     max-width: 1000px;
-    max-height: 450px;
+    max-height: 470px;
 }
 article{
     position: relative;
