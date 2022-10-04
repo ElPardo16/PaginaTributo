@@ -131,6 +131,7 @@ h1{
 .ch{
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
+    max-height: 450px;
 }
 .ch img{
     width: 70%;
