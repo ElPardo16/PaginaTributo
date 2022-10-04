@@ -27,7 +27,8 @@ html::-webkit-scrollbar{
     width: 100%;
     height: calc(100% - 150px);
     left: 50%;
-    bottom: 0;
+    top: 30%;
+    bottom: 30%;
     transform: translateX(-50%);
     max-width: 1000px;
 }
