@@ -13,6 +13,7 @@ o de cierre como:
     <body>
         ....(contenido)
     </body>
+
     <div class="container">
     	....
     </div>
@@ -20,33 +21,35 @@ o de cierre como:
 ## ¿Cuál es la diferencia entre HTML y HTML semántico?
 La diferencia es que en html semantico hacemos uso de etiquetas que estan hechas para cierto tipo de contenido como `<article>` o `<header>` en vez de solo usar `<div>`
 
-<img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%20%28114%29-65ee59e2-847d-43c8-866a-65233ebe6765.jpg" alt"imagen de ejemplo" width="200px">
+<img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%20%28114%29-65ee59e2-847d-43c8-866a-65233ebe6765.jpg" alt="imagen de ejemplo" width="200px">
 
 ## ¿Para qué sirve la etiqueta DOCTYPE?
 No es una etuiqueta, es una declaracion y sirve para decirle a nuestro navegador que version de html vamos a usar en nustra pagina, si la ponemos estariamos usando la version 5 de html y podriamos usar etiquetas como `<canvas>`.
 Si no la usamos le estariamos usando una version vieja de html que no tiene todas sus caracteristicas
 
 ## ¿Cuál es la diferencia entre la etiqueta `<HTML>` `<HEAD>` y `<BODY>` ?
-`<HTML>`
+`<HTML>`<br>
 Es la etiqueta raiz de nuestro documento, es la que encierra todo.
 
-[========]
 
-`<HEAD>`
+
+`<HEAD>`<br>
 Es la etiqueta donde ponemos la logica de nuetra pagina como puede ser `<meta> <link> <tittle> `, esta etiqueta no se dibuja.
 
-[========]
 
-`<BODY>`
+
+`<BODY>`<br>
 En esta etiqueta ponemos todos los elementos que compondran nuestra pagina, toso lo que este adentro de dibuja en pantalla.
 
-[========]
+
 
 ## ¿Cuáles son las etiquetas básicas para controlar el texto en HTML?
 Tenemos varias etiquetas como:
-`<p>`
+`<p>`<br>
+
 Sirve para agregar texto o parrafos
-`<h1> / <h6>`
+`<h1> / <h6>`<br>
+
 Sirven para agregar titulos y subtitulos, entre mas grande el numero de la etiqueta mas pequeño es titulo.
 Ademas tenemos etiquetas como `<b> <i>` que sirven para dar formato a nuestro texto como negrilla y cursiva
 
@@ -57,12 +60,14 @@ Para definir una lista ordenada usamos `<ol>` y se veria asi:
     <li>item</li>
     <li>item</li>
 </ol>
+
 Para definir una lista no ordenada usamos `<ul>` y se veria asi: 
 <ul>
     <li>item</li>
     <li>item</li>
     <li>item</li>
 </ul>
+
 como vemos la diferencia esta en las viñetas, la lista ordenada usa numeros y la otra usa formas, cabe resaltar que tenemos que utilizar la etiqueta `<li>item</li>` para cada item.
 
 ## ¿Cómo agregar links en HTML?
@@ -70,54 +75,54 @@ Para agregar un link usamos la etiqueta `<a href="">hipervinculo</a>` la cual ti
 
 ## ¿Cuáles son las etiquetas semánticas?
 Algunas de las etiquetas semanticas mas usadas son:
-`<header>`
+`<header>`<br>
 Esta etiqueta se usa para los encabezados de una pagina
 
-[========]
 
-`<nav>`
+
+`<nav>`<br>
 Esta etiqueta se usa para los menus de navegacion
 
-[========]
 
-`<article>`
+
+`<article>`<br>
 Esta etiqueta se usa para los contenidos de nuestra pagina, cada uno en una etiqueta nueva
 
-[========]
 
-`<aside>`
+
+`<aside>`<br>
 Esta etiqueta se usa para contenidos laterales, como puede ser un banner publicitario
 
-[========]
 
-`<footer>`
+
+`<footer>`<br>
 Esta etiqueta se usa para el pie de pagina donde ponemos informacion de la empresa
 
-[========]
+
 
 <img src="https://www.arkaitzgarro.com/html5/images/cap02/html5.png" alt="imagen de ejemplo" width="500px">
 
 ## ¿Cómo crear tablas en HTML?
 Para crear una tabla usamos 4 etiquetas:
-`<table>`
+`<table>`<br>
 Esta etiqueta crea la tabla
 
-[========]
 
-`<th>`
+
+`<th>`<br>
 Esta etiqueta es para los titulos de las columnas
 
-[========]
 
-`<tr>`
+
+`<tr>`<br>
 Esta etiqueta es para definir las filas de la tabla
 
-[========]
 
-`<td>`
+
+`<td>`<br>
 Esta etiqueta es para definir los items de las celdas
 
-[========]
+
 
 La forma correcta de utilizarlo es la siguiente:
 
@@ -169,28 +174,28 @@ Los formularios se definen a traves de la etiqueta `<form action="url" method="g
 
 Tenemos 4 etiquetas para formularios:
 
-`<label for="mail">Correo electrónico:</label>`
+`<label for="mail">Correo electrónico:</label>`<br>
 Esta etiqueta es para definir una etiqueta que suigiere que es lo que deberia ponerse en el input
 
-[========]
 
-`<input type="email" id="mail" name="user_mail">`
+
+`<input type="email" id="mail" name="user_mail">`<br>
 Esta etiqueta es para definir las entradas del usuario, pueden ser de tipo numerico, texto, email, checkbox, radiobutton entre otros.
 cada uno da una entrada diferente ademas de tener diferentes usos
 
 <img src="https://i.ytimg.com/vi/MKSQYsLLFEo/maxresdefault.jpg" alt="imagen de ejemplo">
 
-[========]
 
-`<textarea id="msg" name="user_message"></textarea>`
+
+`<textarea id="msg" name="user_message"></textarea>`<br>
 Esta etiqueta es para una entrada de texto que acepta muchas mas palabras
 
-[========]
 
-`<button type="submit">Envíe su mensaje</button>`
+
+`<button type="submit">Envíe su mensaje</button>`<br>
 Esta etiqueta es para crear el boton con el que enviaremos los datos
 
-[========]
+
 
 
 
