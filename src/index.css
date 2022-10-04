@@ -90,6 +90,7 @@ h1{
 }
 .inicio i{
     font-size: .7rem;
+    color: var(--color_texto_parrafos);
 }
 .inicio > p{
     position: absolute;
@@ -102,7 +103,7 @@ h1{
 .iconos{
     padding: 0 40px;
     position: absolute;
-    color: white;
+    color: var(--color_texto_parrafos);
     width: 100%;
     height: 100px;
     bottom: 0;
@@ -111,12 +112,12 @@ h1{
     justify-content: space-around;
     align-items: center;
 }
-.iconos i:nth-child(2){
+.iconos a:nth-child(2){
     margin-right: auto;
     margin-left: 40px;
 }
 
-.iconos > a{
+.iconos a:last-child{
     margin-left: 40px;
     color: var(--color_texto_parrafos);
     font-size: .27rem;

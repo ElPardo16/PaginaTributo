@@ -21,7 +21,7 @@ o de cierre como:
 ## ¿Cuál es la diferencia entre HTML y HTML semántico?
 La diferencia es que en html semantico hacemos uso de etiquetas que estan hechas para cierto tipo de contenido como `<article>` o `<header>` en vez de solo usar `<div>`
 
-<img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%20%28114%29-65ee59e2-847d-43c8-866a-65233ebe6765.jpg" alt="imagen de ejemplo" width="200px">
+<img src="https://static.platzi.com/media/user_upload/Captura%20de%20pantalla%20%28114%29-65ee59e2-847d-43c8-866a-65233ebe6765.jpg" alt="imagen de ejemplo" width="400px">
 
 ## ¿Para qué sirve la etiqueta DOCTYPE?
 No es una etuiqueta, es una declaracion y sirve para decirle a nuestro navegador que version de html vamos a usar en nustra pagina, si la ponemos estariamos usando la version 5 de html y podriamos usar etiquetas como `<canvas>`.
@@ -196,6 +196,16 @@ Esta etiqueta es para una entrada de texto que acepta muchas mas palabras
 Esta etiqueta es para crear el boton con el que enviaremos los datos
 
 
+<br><br>
 
+# Registros de la maquetacion
+- La estructura del html de la pagina de ejemplo es muy diferente a la mia, por lo cual la comienzo de cero
+- No tuve en cuenta dejar una zona segura para que cuando la pantalla es muy grande no se deforme y se vea mal la pagina
+- Agregue la zona segura, pero tuve algunos incovenientes con las imagenes de fondo ya que esas si tenian que ocupar el  100% de la pantalla, pero lo corregi
+- Use grid y flexbox, ademas de posicionamiento para ubicar los elementos
+- Use pseudoelementos para crear algunos contenidos
+- Use unidades relativas ademas de variables para facilitar un futuro responsive
+- Agregue una animacion cuando se hace scroll al dar en un item del menu
+- Mi pagina tenia que tener un scroll con snap por lo tanto procedo a crearlo
 
-
+<br>
