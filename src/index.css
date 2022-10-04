@@ -1,0 +1,254 @@
+:root{
+    --color_texto_menu: #000;
+    --color_texto_parrafos: #fff;
+    --color_texto_titulos: #AC2A31;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+html{
+    font-size: 64px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+html::-webkit-scrollbar{
+    display: none;
+}
+.container{
+    position: absolute;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 30px 50px 20px;
+    width: 100%;
+    height: calc(100% - 150px);
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    max-width: 1000px;
+}
+article{
+    position: relative;
+    inset: 0;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+article:not(:first-child)::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .8);
+    
+}
+p{
+    font-size: 0.4rem;
+    color: var(--color_texto_parrafos);
+    text-shadow:1px 0 0 black,0 1px 0 black,-1px 0 0 black,0 -1px 0 black;
+}
+h1{
+    position: relative;
+    text-align: center;
+    color: var(--color_texto_titulos);
+    top: 80px;
+    left: 0;
+    text-shadow:1px 0 0 white,0 1px 0 white,-1px 0 0 white,0 -1px 0 white;
+    font-size: .8rem;
+}
+.menu{
+    font-size: .27rem;
+    width: 70vw;
+    max-width: 720px;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+.menu ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu a{
+    color: var(--color_texto_menu);
+    text-decoration: none;
+    text-shadow:1px 0 0 white,0 1px 0 white,-1px 0 0 white,0 -1px 0 white;
+}
+.inicio{
+    background: url(./img/thumb-1920-174400.jpg) no-repeat center;
+    background-size: cover;
+}
+.inicio i{
+    font-size: .7rem;
+}
+.inicio > p{
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    right: 10vh;
+    text-align: left;
+    transform: translateY(-50%);
+}
+.iconos{
+    padding: 0 40px;
+    position: absolute;
+    color: white;
+    width: 100%;
+    height: 100px;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.iconos i:nth-child(2){
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+.iconos > a{
+    margin-left: 40px;
+    color: var(--color_texto_parrafos);
+    font-size: .27rem;
+    text-decoration: none;
+    text-shadow:1px 0 0 black,0 1px 0 black,-1px 0 0 black,0 -1px 0 black;
+}
+.historia{
+    background: url(./img/43fac17025e540e0122730b385a3dd3a.jpg) no-repeat 60% center;
+    background-size: cover;
+}
+.ch{
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+}
+.ch img{
+    width: 70%;
+    grid-column: 2/3;
+    border: 3px solid white;
+    align-self: start;
+}
+.ch p{
+    width: 90%;
+    font-size: .34rem;
+}
+.ch p:last-child{
+    align-self: start;
+}
+.ch p:nth-child(2){
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: start;
+    padding-top: 10px;
+}
+.ce ,.ca{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: start;
+}
+.enemigos{
+    background: url(./img/1199359980_359980_000039_album_normal.jpg) no-repeat 50% center;
+    background-size: cover;
+}
+.ene, .ar, .colec{
+    position: relative;
+    width: 50%;
+    height: 70%;
+    background: url(./img/fiends-01-1024x340.jpg) no-repeat;
+    background-size: 520% 100%;
+    border-radius: 15px;
+}
+.ene::before , .ar::before, .colec::before{
+  content: attr(data-text);
+  position: absolute;
+  white-space: nowrap;
+  left: 50%;
+  bottom: -30%;
+  transform: translateX(-50%);
+  font-size: .34rem;
+  color: var(--color_texto_parrafos);
+  text-align: center;
+  text-shadow:1px 0 0 black,0 1px 0 black,-1px 0 0 black,0 -1px 0 black;
+}
+.ene:nth-child(2){
+    background-position-x: 32%;
+}
+.ene:nth-child(3){
+    background-position-x: 68.5%;
+}
+.ene:nth-child(4){
+    background-position-x: 98%;
+}
+.ene:nth-child(5){
+    background: url(./img/7-NG2_Art_Enemy_VanGelf_1.jpg);
+}
+.ene:nth-child(6){
+    background: url(./img/8-Vazdah_concept_art.jpg);
+}
+.ene:nth-child(7){
+    background: url(./img/10-NG2_Art_Enemy_Ninja_Melee_1.jpg) 40%;
+}
+.ene:nth-last-child(-n+3){
+    left: 50%;
+    background-size: cover;
+}
+.armas{
+    background: url(./img/ninja-gaiden-sigma-2-wallpaper-preview.jpg) no-repeat 60% center;
+    background-size: cover;
+}
+.ar{
+    width: 40%;
+    background: url("./img/descarga\ \(1\).jpg") no-repeat left 20%;
+    background-size: 880% 260%;
+}
+.ar:nth-child(2){
+    background-position-x: 14%;
+}
+.ar:nth-child(3){
+    background-position-x: 29%;
+}
+.ar:nth-child(4){
+    background-position-x: 43%;
+}
+.ar:nth-child(5){
+    background-position-x: 57%;
+}
+.ar:nth-child(6){
+    background-position-x: 71.5%;
+}
+.ar:nth-child(7){
+    background-position-x: 86%;
+}
+.ar:nth-child(8){
+    background-position-x: 99%;
+}
+.coleccionables{
+    background: url(./img/wp11324932.jpg) no-repeat 90% center;
+    background-size: cover;
+}
+.cc{
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+}
+.colec{
+    margin-top: 30px;
+    width: 60%;
+    height: 60%;
+}
+.colec:first-child{
+    background: url(./img/bc4d6e8329c33f571cf089b89037672a.jpg) no-repeat 40% center;
+    background-size: 130% 100%;
+}
+.colec:last-child{
+    background: url(./img/Pergamino.webp) no-repeat 40% center;
+    background-size: 100% 100%;
+}
