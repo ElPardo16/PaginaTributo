@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
     <title>Tributo Ninja Gaiden</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,14 +14,20 @@
 <body>
     <main>
         <article id="inicio" class="inicio">
-            <nav class="menu">
+            <nav id="menu" class="menu hide">
+                <i id="m-b" onclick="clickMenu()" class="fa-solid fa-bars m-b"></i>
                 <ul>
-                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a class="select" href="#inicio">Inicio</a></li>
                     <li><a href="#historia">Historia</a></li>
                     <li><a href="#enemigos">Enemigos</a></li>
                     <li><a href="#armas">Armas</a></li>
                     <li><a href="#coleccionables">Coleccionables</a></li>
                 </ul>
+                <div class="iconos-m">
+                    <a href="https://www.facebook.com/teamninjastudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.xbox.com/es-CO/games/store/ninja-gaiden-ii/bscsrtx27zh3" target="_blank"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a href="https://es.wikipedia.org/wiki/Ninja_Gaiden_II_(videojuego_de_2008)" target="_blank"><i class="fa-regular fa-square-plus"></i></a>
+                </div>
             </nav>
             <p>Ninja gaiden es un videojuego de estilo hack’ n slash que consiste en masacrar oleadas de enemigos para lograr acabar con el archidemonio</p>
             <div class="iconos">
@@ -29,12 +35,14 @@
                 <a href="https://www.xbox.com/es-CO/games/store/ninja-gaiden-ii/bscsrtx27zh3" target="_blank"><i class="fa-solid fa-bag-shopping"></i></a>
                 <a href="https://es.wikipedia.org/wiki/Ninja_Gaiden_II_(videojuego_de_2008)" target="_blank">Mas informacion</a>
             </div>
+            <img class="logong2" src="./src/img/ninja_gaiden_ii_logo_by_paulxiii_d1aojcs-fullview.png" alt="">
         </article>
         <article id="historia" class="historia">
             <h1>Historia</h1>
             <div class="container ch">
                 <img src="./src/img/ninja_gaiden_ii_image7.jpg" alt="Imagen ninja gaiden 2">
-                <p>El clan de la araña negra quiere traer a la vida al archidemonio para conquistar el mundo, para eso van por la estatua del demonio para traer a la vida a los 4 demonios maximos.<br><br><br> Ryu hayabusa intenta impedirlo pero llega muy tarde, los 4 demonios son liberados y empieza el plan, Ryu lucha y derrota a los 4 y al clan de la araña negra; Emprende un viaje hacia el inframundo para impedir que surja el archidemonio.</p>
+                <p>El clan de la araña negra quiere traer a la vida al archidemonio para conquistar el mundo, para eso van por la estatua del demonio para traer a la vida a los 4 demonios maximos.</p>
+                <p>Ryu hayabusa intenta impedirlo pero llega muy tarde, los 4 demonios son liberados y empieza el plan, Ryu lucha y derrota a los 4 y al clan de la araña negra; Emprende un viaje hacia el inframundo para impedir que surja el archidemonio.</p>
                 <p>En el inframundo vuelve a derrotar a los 4 demonios maximos y saca sus corazones para abrir las puertas del mas alla y derrotar al hechicero supremo y su lider el archidemonio y salvar el mundo.</p>
             </div>
         </article>
@@ -71,5 +79,6 @@
             </div>    
         </article>
     </main>
+    <script src="./src/script.js"></script>
 </body>
 </html>
