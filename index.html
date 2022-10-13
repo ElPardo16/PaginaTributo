@@ -11,22 +11,23 @@
     <link rel="stylesheet" href="./src/index.css">
     <script src="https://kit.fontawesome.com/c769cd4b6c.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onscroll="scrollPos()">
     <main>
+        <div id="f-menu" class="f-menu hideF"></div>
         <article id="inicio" class="inicio">
             <nav id="menu" class="menu hide">
                 <i id="m-b" onclick="clickMenu()" class="fa-solid fa-bars m-b"></i>
                 <ul>
-                    <li><a class="select" href="#inicio">Inicio</a></li>
-                    <li><a href="#historia">Historia</a></li>
-                    <li><a href="#enemigos">Enemigos</a></li>
-                    <li><a href="#armas">Armas</a></li>
-                    <li><a href="#coleccionables">Coleccionables</a></li>
+                    <li><a id="m-1" class="select" href="#inicio" onclick="hoverMenu('m-1')">Inicio</a></li>
+                    <li><a id="m-2" class="" href="#historia" onclick="hoverMenu('m-2')">Historia</a></li>
+                    <li><a id="m-3" class="" href="#enemigos" onclick="hoverMenu('m-3')">Enemigos</a></li>
+                    <li><a id="m-4" class="" href="#armas" onclick="hoverMenu('m-4')">Armas</a></li>
+                    <li><a id="m-5" class="" href="#coleccionables" onclick="hoverMenu('m-5')">Coleccionables</a></li>
                 </ul>
                 <div class="iconos-m">
-                    <a href="https://www.facebook.com/teamninjastudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.xbox.com/es-CO/games/store/ninja-gaiden-ii/bscsrtx27zh3" target="_blank"><i class="fa-solid fa-bag-shopping"></i></a>
-                    <a href="https://es.wikipedia.org/wiki/Ninja_Gaiden_II_(videojuego_de_2008)" target="_blank"><i class="fa-regular fa-square-plus"></i></a>
+                    <a onclick="clickMenu()" href="https://www.facebook.com/teamninjastudio" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a onclick="clickMenu()" href="https://www.xbox.com/es-CO/games/store/ninja-gaiden-ii/bscsrtx27zh3" target="_blank"><i class="fa-solid fa-bag-shopping"></i></a>
+                    <a onclick="clickMenu()" href="https://es.wikipedia.org/wiki/Ninja_Gaiden_II_(videojuego_de_2008)" target="_blank"><i class="fa-regular fa-square-plus"></i></a>
                 </div>
             </nav>
             <p>Ninja gaiden es un videojuego de estilo hack’ n slash que consiste en masacrar oleadas de enemigos para lograr acabar con el archidemonio</p>
