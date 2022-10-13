@@ -26,9 +26,10 @@ function hover(id){
 function scrollPos(){
     for (let index = 1; index < 6; index++) {
         //const element = array[index];
-        let altura = window.innerHeight * (index - 1) 
-        //console.log(altura)
-        if(window.scrollY == altura){
+        let altura = window.innerHeight * (index - 1)
+        let altura2 = window.innerHeight * index  
+        console.log(altura)
+        if(window.scrollY >= altura && window.screenY < index ){
             hover(`m-${index}`)
         }
         
